@@ -18,12 +18,21 @@ print(backwards)
 
 # There is also easier and shorter way:
 
-# def reverse(sentence):
-#     if type(sentence) != str:
-#         return "Please enter a string"
-#     else:
-#         return sentence[::-1]
-#
-#
-# backwards = reverse('Hi my name is Tom')
-# print(backwards)
+def reverse(sentence):
+    if type(sentence) != str:
+        return "Please enter a string"
+    else:
+        return sentence[::-1]
+
+
+backwards = reverse('Hi my name is Tom')
+print(backwards)
+
+# Another way is to use recursion
+
+def reverse_string_recursive(string):
+    if string == "":
+        return ""
+    else:
+        return reverse_string_recursive(string[1:]) + string[0]
+
