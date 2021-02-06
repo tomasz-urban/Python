@@ -1,4 +1,6 @@
-#Selection sort is not very useful. It is not efficient.
+#Selection sort is not very useful. It is not efficient. Time complexity O(n^2) in all of the cases.
+
+# Scanning list of items looking for smallest one and switches with the first item. Doing this again and again.
 
 def selection_sort():
     count = 0
